@@ -391,6 +391,8 @@ def build_tuv(option):
     cmake_opt.append('-DCMAKE_BUILD_TYPE=' + option.buildtype)
     cmake_opt.append('-DTARGET_PLATFORM=' + target_tuple)
     cmake_opt.append('-DLIBTUV_CUSTOM_LIB_OUT=' + build_home)
+    cmake_opt.append('-DCMAKE_C_COMPILER=' + '/usr/bin/gcc')
+    cmake_opt.append('-DCMAKE_CXX_COMPILER=' + '/usr/bin/g++')
     cmake_opt.append('-DBUILDTESTER=no')
     cmake_opt.append('-DBUILDAPIEMULTESTER=no')
 
